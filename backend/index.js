@@ -7,7 +7,7 @@ const app = express();
 // Connect to MongoDB
 connectToMongo();
 
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 app.use(express.json());
 app.use(cors())
