@@ -13,7 +13,7 @@ const Signup = ({triggerPopup}) => {
         e.preventDefault();
         const { name, email, password } = credentails;
 
-        const response = await fetch("http://localhost:5000/api/auth/NewUser", {
+        const response = await fetch("https://notebook-backend-ir8y.onrender.com/api/auth/NewUser", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'

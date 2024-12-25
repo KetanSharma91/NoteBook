@@ -10,7 +10,7 @@ const Login = ({triggerPopup}) => {
 
     const handlesubmit = async (e) => {
         e.preventDefault();
-        const response = await fetch("http://localhost:5000/api/auth/Login", {
+        const response = await fetch("https://notebook-backend-ir8y.onrender.com/api/auth/Login", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
